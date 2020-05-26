@@ -1,6 +1,7 @@
 # one-date
+
+1. DB set
 mysql 8.0 사용
-DB set
 create database onedate;
 
 CREATE TABLE `user` (
@@ -52,5 +53,13 @@ CREATE TABLE `message` (
   PRIMARY KEY (`idx`)
 ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
 
+2. view set
 
+chat.jsp 324번줄 자신의 컴퓨터에 맞게 변경
+let ws = new SockJS('http://"도메인주소":"포트번호"/project/chat');
+
+
+3. etc
+
+일부 api key와 서비스는 막아놨기에 실행이 불가할 수 있습니다
 
